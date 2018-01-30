@@ -1,0 +1,28 @@
+{
+  "name": "nitm",
+  "version": "0.0.0",
+  "description": "Node in the middle. Intercept calls to the node binary and set some node specific flags before running a program",
+  "main": "index.js",
+  "bin": "./bin.js",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "stream-collector": "^1.0.1",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/nitm.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/nitm/issues"
+  },
+  "homepage": "https://github.com/mafintosh/nitm"
+}
