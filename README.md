@@ -7,6 +7,8 @@ flags before running a program
 npm install nitm
 ```
 
+[![build status](https://travis-ci.org/mafintosh/nitm.svg?branch=master)](https://travis-ci.org/mafintosh/nitm)
+
 Useful if you need to profile another application but don't know when it is invoking node itself.
 
 ## Usage
