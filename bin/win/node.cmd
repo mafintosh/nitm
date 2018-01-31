@@ -1,1 +1,1 @@
-%NITM_BIN% %NITM_FLAGS% %*
+@ "%NITM_BIN%" %NITM_FLAGS% %*

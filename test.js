@@ -16,7 +16,8 @@ tape('basic', function (t) {
 })
 
 tape('node from wrapped shell', function (t) {
-  var proc = nitm(['--version'], ['sh', '-c', 'node'])
+  var cmd = process.platform === 'win32' ? ['cmd.exe', '/c', 'node'] : ['sh', '-c', 'node']
+  var proc = nitm(['--version'], cmd)
   collect(proc.stdout, function (err, data) {
     t.error(err, 'no error')
     childProcess.exec('node --version', function (err, expected) {
