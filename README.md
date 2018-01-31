@@ -8,6 +8,7 @@ npm install nitm
 ```
 
 [![build status](https://travis-ci.org/mafintosh/nitm.svg?branch=master)](https://travis-ci.org/mafintosh/nitm)
+[![Build status](https://ci.appveyor.com/api/projects/status/2mesincjmvg818j9?svg=true)](https://ci.appveyor.com/project/mafintosh/nitm)
 
 Useful if you need to profile another application but don't know when it is invoking node itself.
 
