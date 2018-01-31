@@ -40,6 +40,10 @@ npm i -g nitm
 nitm --no-warnings -- tape test/*.js
 ```
 
+## Acknowledgements
+
+This project was kindly sponsored by nearForm.
+
 ## License
 
 MIT
