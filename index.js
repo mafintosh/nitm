@@ -1,6 +1,10 @@
 var proc = require('child_process')
 var path = require('path')
 
+var isWin = process.platform === 'win32'
+var bin = isWin ? 'bin/win' : 'bin/unix'
+var sep = isWin ? ';' : ':'
+
 module.exports = spawn
 
 function spawn (flags, cmd, opts) {
@@ -8,7 +12,7 @@ function spawn (flags, cmd, opts) {
     env: Object.assign({}, process.env, {
       NITM_BIN: process.execPath,
       NITM_FLAGS: flags.join(' '),
-      PATH: path.join(__dirname, 'bin') + ':' + process.env.PATH
+      PATH: path.join(__dirname, bin) + sep + process.env.PATH
     })
   })
 }
