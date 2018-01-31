@@ -11,6 +11,8 @@ npm install nitm
 
 Useful if you need to profile another application but don't know when it is invoking node itself.
 
+Tested on Mac, Linux, and Windows
+
 ## Usage
 
 ``` js
