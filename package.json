@@ -1,6 +1,6 @@
 {
   "name": "nitm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node in the middle. Intercept calls to the node binary and set some node specific flags before running a program",
   "main": "index.js",
   "bin": "./bin.js",
